@@ -20,7 +20,7 @@ setup(
     url=URL,
     author=AUTHOR,
     author_email=AUTHOR_EMAIL,
-    include_package_data=True,
+    # include_package_data=True,
     zip_safe=False,
     keywords=[
         "sqlalchemy_columns"
@@ -30,7 +30,7 @@ setup(
     setup_requires=[
         "wheel",
     ],
-    package_dir={"": "src"},
+    package_dir={"sqlalchemy_columns": "src"},
     packages=find_packages(where="src"),
     install_requires=["sqlalchemy>=2.0"],
     python_requires=">=3.10.0",
